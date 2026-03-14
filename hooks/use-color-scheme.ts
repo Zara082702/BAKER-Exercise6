@@ -1,1 +1,5 @@
-export { useColorScheme } from 'react-native';
+import { useColorScheme as RNUseColorScheme } from 'react-native';
+
+export function useColorScheme() {
+  return RNUseColorScheme();
+}
