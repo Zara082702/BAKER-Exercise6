@@ -21,11 +21,7 @@ export default function LoginScreen() {
 
   return (
     <ImageBackground source={bgImage} resizeMode="cover" style={styles.background}>
-      {/* THIS IS THE KEY CHANGE: 
-          We change the overlay's background color based on the theme.
-          We use 'rgba' or Hex with transparency so you can still see the image, 
-          but the "vibe" changes from Light to Dark.
-      */}
+      
       <View style={[
         styles.overlay, 
         { backgroundColor: mode === 'light' ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.75)' }
